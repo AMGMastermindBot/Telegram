@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MastermindBot - Your Ultimate Telegram Quiz Bot with a Taylor Swift-inspired theme.">
+    <title>MastermindBot - Your Telegram Quiz Bot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            background: linear-gradient(135deg, #f9e4e8 0%, #ffffff 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            color: #d4af37; /* Gold for Taylor Swift's luxe vibe */
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .logo-container {
+            margin: 20px 0;
+        }
+
+        .logo-container img {
+            width: 150px;
+            height: auto;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid #d4af37;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #d4af37;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f9e4e8;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #d4af37;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #ff6f61; /* Coral for a pop of Taylor's *Lover* era */
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a {
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: #ff6f61;
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background: #f9e4e8;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        footer {
+            background: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #d4af37;
+        }
+
+        footer a:hover {
+            color: #ff6f61;
+        }
+
+        /* Sparkle Animation for Taylor Swift magic */
+        .sparkle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .sparkle::before, .sparkle::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #d4af37;
+            border-radius: 50%;
+            animation: sparkle 5s infinite;
+            opacity: 0.7;
+        }
+
+        .sparkle::before {
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .sparkle::after {
+            top: 80%;
+            left: 90%;
+            animation-delay: 2s;
+        }
+
+        @keyframes sparkle {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1); opacity: 0.8; }
+            100% { transform: scale(0); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to MastermindBot</h1>
+        <p>Your Ultimate Telegram Quiz Bot with a Taylor Swift Twist</p>
+        <div class="logo-container">
+            <img src="https://drive.google.com/uc?export=download&id=10S0b-X-qTbijcW67H4-IEjU-HiDvF1B7" alt="MastermindBot Logo">
+        </div>
+        <div class="sparkle"></div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Meet MastermindBot</h2>
+            <p>
+                Inspired by Taylor Swift's *Mastermind*, MastermindBot is your go-to Telegram quiz bot designed to bring fun, challenge, and a touch of sparkle to your group chats. Whether you're a Swiftie or just love a good trivia challenge, MastermindBot has something for everyone.
+            </p>
+            <p>
+                Add MastermindBot to your Telegram group and dive into quizzes that test your knowledge, spark laughter, and create unforgettable moments—just like Taylor’s iconic Easter eggs hidden in her music.
+            </p>
+            <p class="highlight">
+                Ready to play? Find MastermindBot on Telegram at <a href="https://t.me/MastermindBot">@MastermindBot</a> and start quizzing today!
+            </p>
+            <a href="privacy-policy.html" class="cta-button">View Our Privacy Policy</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 MastermindBot. All rights reserved. Inspired by Taylor Swift’s *Mastermind*.</p>
+        <p><a href="https://t.me/MastermindBotSupport">Contact Support</a></p>
+    </footer>
+</body>
+</html>
